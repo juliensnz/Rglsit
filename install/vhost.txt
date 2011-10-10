@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+   ServerName rgls.it
+   DocumentRoot "/Volumes/Fichiers/sumbobyboys/Projets/Rglsit/"
+   <Directory "/Volumes/Fichiers/sumbobyboys/Projets/Rglsit/">
+      Options Includes FollowSymLinks  
+      AllowOverride All
+      Order allow,deny
+        Allow from all
+   </Directory>
+</VirtualHost>

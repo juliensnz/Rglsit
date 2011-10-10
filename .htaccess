@@ -1,0 +1,10 @@
+# On suit les liens symboliques 
+Options +FollowSymlinks 
+# Activation du mod rewrite d'Apache 
+RewriteEngine On
+RewriteRule ^stats$ /stats.php [L]
+RewriteRule ^genius$ /genius.php [L]
+RewriteRule ^stats/$ /stats.php [L]
+RewriteRule ^stats/([0-9a-zA-Z]+)$ /stats.php?hash=$1 [L]
+RewriteRule ^([0-9a-zA-Z]+)$  /file.php?hash=$1 [L]
+RewriteRule ^.{0}$ /index.php [L]

@@ -1,0 +1,249 @@
+
+dl#weekchart dt {
+	display : none; /* on masque les dt qui servent à rien visuellement mais c'est juste utile à la lecture du code en fait */
+}
+
+dl#weekchart {
+	width : 700px;
+	height : 200px;
+	margin : 0 auto;
+	margin-top : 50px;
+    -webkit-box-reflect:below -4px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(rgba(255,255,255,.25)));
+}
+
+dl#weekchart dd {
+	position : relative;
+	float : left;
+	display : block;
+	width : 100px;
+	heigth : 200px;
+	margin-top : 200px;
+}
+
+dl#weekchart span.bar {
+	position : absolute;
+	display : block;
+	width : 100px;
+	bottom : 0;
+	left : 0;
+	z-index : 0;
+	color : #555;
+	text-decoration : none;
+	background-image :-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.4)), color-stop(100%,rgba(255,255,255,0)));
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,0)); /* FF3.6 */
+}
+
+
+
+dl#weekchart dd span.bar strong {
+	display : block;
+	color : rgba(0,0,0,.4);
+	text-shadow : 0 0 6px rgba(0,0,0,.2);
+	text-align : center;
+	font-size : 12px;
+	width : 100%;
+	overflow : hidden;
+	margin-top : -24px;
+	font-family: 'Yanone Kaffeesatz';
+	font-style : normal;
+}
+
+dl#weekchart dd span.bar strong > .liens {
+	color : #45648b;
+}
+
+span.pictos {
+	font-family : "Pictos";
+}
+
+dl#weekchart dd span.total {
+	position : absolute;
+	text-shadow : none;
+	color : #373737;
+	z-index : -2;
+	opacity : 0;
+	font-size : 40px;
+	width : 100px;
+	text-align : center;
+	overflow : hidden;
+	font-family: 'Impact';
+	height: auto;
+}
+
+
+dl#weekchart dd span.bar em {
+	display : inline-block;
+	width : 100px;
+	color : rgba(0,0,0,.6);
+	text-shadow : none;
+	font-family: 'Yanone Kaffeesatz';
+	text-align : center;
+	font-size : 15px;
+	position : absolute;
+	bottom : -22px;
+	font-style : normal;
+}
+
+dl#weekchart dd:nth-of-type(1) span.bar {
+	background-color : #29b9b7;
+}
+
+dl#weekchart dd:nth-of-type(2) span.bar {
+	background-color : #45c940;
+}
+
+dl#weekchart dd:nth-of-type(3) span.bar {
+	background-color : #fd3a14;
+}
+
+dl#weekchart dd:nth-of-type(4) span.bar {
+	background-color : #7954c0;
+}
+
+dl#weekchart dd:nth-of-type(5) span.bar {
+	background-color : #1580f8;
+}
+
+dl#weekchart dd:nth-of-type(6) span.bar {
+	background-color : #ee15f8;
+}
+
+dl#weekchart dd:nth-of-type(7) span.bar {
+	background-color : #f87315;
+}
+
+dl#weekchart dd span.bar em, dl#weekchart dd span.bar strong, dl#weekchart dd span.total {
+	-webkit-transition-property: opacity; 
+	-webkit-transition-duration: 0.5s; 
+	-webkit-transition-timing-function: ease-in; 
+	-moz-transition-property: opacity; 
+	-moz-transition-duration: 0.5s; 
+	-moz-transition-timing-function: ease-in;
+	-o-transition-property: opacity; 
+	-o-transition-duration: 0.5s; 
+	-o-transition-timing-function: ease-in;
+	transition-property: opacity; 
+	transition-duration: 0.5s; 
+	transition-timing-function: ease-in;
+	opacity: 0;
+}
+
+span.bar, span.secondary-bar {
+	-webkit-transition-property : height;
+	-webkit-transition-duration : 1500ms;
+	-webkit-transition-duration : ease-in;
+	-moz-transition-property : height;
+	-moz-transition-duration : 1500ms;
+	-moz-transition-duration : ease-in;
+	-o-transition-property : height;
+	-o-transition-duration : 1500ms;
+	-o-transition-duration : ease-in;
+	transition-property : height;
+	transition-duration : 1500ms;
+	transition-duration : ease-in;
+}
+
+dl#weekchart dd span.total {
+	-webkit-transition-property : top, opacity;
+	-webkit-transition-duration : 1500ms;
+	-webkit-transition-duration : ease-in;
+	-moz-transition-property : top, opacity;
+	-moz-transition-duration : 1500ms;
+	-moz-transition-duration : ease-in;
+	-o-transition-property : top, opacity;
+	-o-transition-duration : 1500ms;
+	-o-transition-duration : ease-in;
+	transition-property : top, opacity;
+	transition-duration : 1500ms;
+	transition-duration : ease-in;
+}
+
+div#top-domains {
+	width : 100%;
+	margin : 0 auto;
+	height : 200px;
+	margin-top : 100px;
+	position : relative;
+	display : inline-block;
+	border: 1px solid rgba(0,0,0,.4);
+	border-top : none;
+}
+
+div#top-domains ul#domains {
+	list-style-type : none;
+	margin : 0;
+	text-shadow : none;
+}
+
+div#top-domains ul#domains li {
+	height : 40px;
+	display : inline-block;
+	-webkit-box-shadow : inset 0 1px 0 rgba(0,0,0,.4), inset 0 2px 0 rgba(255,255,255,.4);
+	-moz-box-shadow : inset 0 1px 0 rgba(0,0,0,.4), inset 0 2px 0 rgba(255,255,255,.4);
+	box-shadow : inset 0 1px 0 rgba(0,0,0,.4), inset 0 2px 0 rgba(255,255,255,.4);
+	background-image : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,.4)));
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,.4)); /* FF3.6 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#999999')"; /* IE8 */
+	background-color : rgba(255,255,255,.1);
+	width : 100%;
+	margin-bottom : -4px;
+}
+
+div#top-domains ul#domains li:hover {
+	background-color : rgba(255,255,255,.3);
+	-webkit-transition-property : background-color;
+	-webkit-transition-duration : 500ms;
+	-webkit-transition-duration : ease-in;
+	-moz-transition-property : background-color;
+	-moz-transition-duration : 500ms;
+	-moz-transition-duration : ease-in;
+	-o-transition-property : background-color;
+	-o-transition-duration : 500ms;
+	-o-transition-duration : ease-in;
+	transition-property : background-color;
+	transition-duration : 500ms;
+	transition-duration : ease-in;
+}
+
+div#top-domains ul#domains li strong.dernier-lien, div#top-domains ul#domains li em.total-domaine {
+}
+
+
+div#top-domains ul#domains li em.total-domaine, div#top-domains ul#domains li strong.dernier-lien, div#top-domains ul#domains li a {
+	font-style : normal;
+	font-weight : normal;
+	float : left;
+	text-align : center;
+	padding-top : 12px;
+}
+
+div#top-domains ul#domains li a {
+	text-align : left;
+	width : 67%;
+	overflow-x : hidden;
+	white-space:nowrap;
+	text-overflow : ellipsis;
+	padding-left : 10px;
+	display : block;
+	color : #898989;
+	text-decoration : none;
+}
+
+div#top-domains ul#domains li a:hover {
+}
+
+div#top-domains ul#domains li a strong {
+	color : #434343;
+}
+
+div#top-domains ul#domains li em.total-domaine {
+	width : 15%;
+	height : 100%;
+	display : block;
+}
+
+div#top-domains ul#domains li strong.dernier-lien {
+	width : 15%;
+	display : block;
+	height : 100%;
+}

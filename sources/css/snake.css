@@ -1,0 +1,124 @@
+
+#page404
+{
+	width:400px;
+	height:500px;	
+	position:relative;
+	margin:auto;
+	top:120px;
+}
+
+#msg404
+{
+	font-family:"Lobster";
+	font-size:30px;
+	margin-bottom:20px;
+}
+
+#msg404 span
+{
+	font-size:150px;
+}
+
+#snake
+{
+	width:348px;
+	height:216px;
+	
+	position:relative;
+	margin:auto;
+}
+
+
+
+/*  DEBUT SNAKE  */
+#terre
+{
+	width:348px;
+	height:216px;
+	overflow:hidden;
+	
+	position:absolute;
+	margin:0px;
+	
+	width:100%;
+	height:100%;
+	
+	border:1px solid RGBa(0,0,0,0.3);
+	border-radius:10px;
+	-webkit-box-shadow:0px 0px 5px RGBa(0,0,0,0.5) inset,0px 1px 0px RGBa(255,255,255,0.5), 0px -1px 0px RGBa(0,0,0,0.3);
+	-moz-box-shadow:0px 0px 5px RGBa(0,0,0,0.5) inset,0px 1px 0px RGBa(255,255,255,0.5), 0px -1px 0px RGBa(0,0,0,0.3);
+	-o-box-shadow:0px 0px 5px RGBa(0,0,0,0.5) inset,0px 1px 0px RGBa(255,255,255,0.5), 0px -1px 0px RGBa(0,0,0,0.3);
+	box-shadow:0px 0px 5px RGBa(0,0,0,0.5) inset,0px 1px 0px RGBa(255,255,255,0.5), 0px -1px 0px RGBa(0,0,0,0.3);
+
+	
+	
+	-webkit-transition:opacity 0.5s linear,height 1s ease-in-out;
+	-moz-transition:opacity 0.5s linear,height 1s ease-in-out;
+	-o-transition:opacity 0.5s linear,height 1s ease-in-out;
+	transition:opacity 0.5s linear,height 1s ease-in-out;
+	
+	
+	background: #ccc -webkit-gradient(radial, 40% top, 50, 40% top, 300, from(#fff), to(#ccc)) no-repeat;
+	background: #ccc -moz-radial-gradient(40% 0px 45deg, farthest-side, #fff 0%, #ccc 100%) no-repeat;
+}
+.elementSerpent
+{
+	width:10px;
+	height:10px;
+    border-radius:2px;
+    
+	background:#9ec525;
+	-webkit-box-shadow:0px 0px 4px RGBa(0,0,0,0.6) inset,0px 0px 5px RGBa(0,0,0,0.5);
+	-moz-box-shadow:0px 0px 4px RGBa(0,0,0,0.6) inset,0px 0px 5px RGBa(0,0,0,0.5);
+	-o-box-shadow:0px 0px 4px RGBa(0,0,0,0.6) inset,0px 0px 5px RGBa(0,0,0,0.5);
+	box-shadow:0px 0px 4px RGBa(0,0,0,0.6) inset,0px 0px 5px RGBa(0,0,0,0.5);
+	position:absolute;
+	font-size:3px;
+	-webkit-transition:top 0.1s linear;
+}
+
+#pommeSnake
+{
+	opacity:0;
+	width:10px;
+	height:10px;
+	// border-radius:3px;
+	position:absolute;
+	font-size:3px;
+	//-webkit-box-shadow:0px 0px 2px black inset,0px 1px 0px white;
+	//background:#dd2020;
+	background:url("/sources/images/reglisse.png");
+}
+#infoJeuSnake
+{
+	font-size:13px;
+}
+/* FIN SNAKE */
+
+#directionSnake
+{
+	background:red;	
+}
+
+#snakeScore
+{
+	position:relative;
+	top:10px;
+	font-family:"Lobster";
+	font-size:25px;
+	width:85%;
+	margin:0px auto;
+	height:100px;
+}
+
+#yourScore
+{
+	position:relative;
+	top:10px;
+	font-family:"Lobster";
+	font-size:25px;
+	width:85%;
+	margin:0px auto;
+	height:100px;
+}

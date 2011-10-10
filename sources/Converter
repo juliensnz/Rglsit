@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+path=~/Sites/Markdown
+
+file=`echo $1 | sed 's/.*\///'`
+file=`echo $file | sed 's/\.[^.]*$//'`
+
+echo "<tr><td onclick=\"display('$file')\">$file</td></tr>" >> $path/htmlFiles/liste.txt
+
+if [ "$1" -nt "$path/htmlFiles/$file.html" ]
+then
+	time=`date "+%H:%M:%S"`
+	echo "$time: $file"
+	$path/sources/markdown "$1" > "$path/htmlFiles/$file.html"
+fi
