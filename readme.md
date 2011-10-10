@@ -23,3 +23,5 @@ Ce logiciel est sous licence Apache, elle permet de copier et modifier comme bon
 Si vous souhaitez contribuer au projet, n'hésitez pas à me contacter : juliens [a] nchez [.] fr
 
 Julien Sanchez - 2011
+
+Création de board.php : Damien Erambert
