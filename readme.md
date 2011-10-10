@@ -7,7 +7,7 @@ Rgls.it permet de partager simplement des fichiers avec d'autres personnes par s
 ## Installation
 
 - Configurer les variables d'environnement dans le fichier config.php
-- Initialiser la base de donnée avec le fichier sql compris dans le dossier /install (supprimer ce dossier après l'installation)
+- Initialiser la base de données avec le fichier sql compris dans le dossier /install (supprimer ce dossier après l'installation)
 - Configurer les vhosts dans votre configuration apache (exemple dans le fichier /install/vhost)
 - Activer le mod url-rewriting
 
